@@ -491,3 +491,23 @@
 // else if(hour=24){
 //     alert("Sorry, you'll have to wait, or go get a snack.")
 // }
+
+
+var firstNumberIn = prompt("choose the 1st no.")
+
+var operator = prompt("choose the operator (\" + , - , * , / \")")
+
+var lastno = prompt("choose the second no. ")
+ 
+if (operator == "+"){
+    alert ("Addition of" +firstNumberIn+ "+" +lastno+ "is"  +firstNumberIn+lastno)
+}
+else if (operator == "-"){
+    alert ("Subtraction of" +firstNumberIn+ "-" +lastno+ "is"  +firstNumberIn-lastno)
+}
+else if (operator == "*"){
+    alert ("Multiplication of" +firstNumberIn+ "×" +lastno+ "is"    +firstNumberIn*lastno)
+}
+else if (operator == "/"){
+    alert ("Division of" +firstNumberIn+ "÷" +lastno+ "is"   +firstNumberIn/lastno)
+};
