@@ -493,21 +493,28 @@
 // }
 
 
-var firstNumberIn = prompt("choose the 1st no.")
+var firstNumberIn =+prompt("choose the 1st no.")
 
 var operator = prompt("choose the operator (\" + , - , * , / \")")
 
-var lastno = prompt("choose the second no. ")
+var lastno =+prompt("choose the second no. ")
+
+var sum = firstNumberIn + lastno
+var minus = firstNumberIn - lastno
+var Multiply = firstNumberIn * lastno
+var dividee =firstNumberIn / lastno
  
-if (operator == "+"){
-    alert ("Addition of" +firstNumberIn+ "+" +lastno+ "is"  +firstNumberIn+lastno)
+if (operator === "+"){
+    alert ("Addition of" +firstNumberIn+ "+" +lastno+ "is"  +sum)
+   
 }
-else if (operator == "-"){
-    alert ("Subtraction of" +firstNumberIn+ "-" +lastno+ "is"  +firstNumberIn-lastno)
+else if (operator === "-"){
+    alert ("Subtraction of" +firstNumberIn+ "-" +lastno+ "is"  +minus)
+    
 }
-else if (operator == "*"){
-    alert ("Multiplication of" +firstNumberIn+ "×" +lastno+ "is"    +firstNumberIn*lastno)
+else if (operator === "*"){
+    alert ("Multiplication of" +firstNumberIn+ "×" +lastno+ "is"    +Multiply)
 }
-else if (operator == "/"){
-    alert ("Division of" +firstNumberIn+ "÷" +lastno+ "is"   +firstNumberIn/lastno)
+else if (operator === "/"){
+    alert ("Division of" +firstNumberIn+ "÷" +lastno+ "is"   +dividee)
 };
